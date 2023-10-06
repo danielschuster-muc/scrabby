@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.6)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  rake
+
+RUBY VERSION
+   ruby 3.1.2p20
+
+BUNDLED WITH
+   2.4.20
