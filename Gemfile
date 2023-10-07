@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby "3.1.2"
 
-gem "active_support/core_ext/string/inflections"
+gem "activesupport"
 gem "cgi"
 gem "csv"
 gem "nokogiri"
