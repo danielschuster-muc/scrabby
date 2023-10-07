@@ -36,7 +36,7 @@ jobs:
           body: |
             This is an automated pull request to update the `characters` data.
           branch: scrabby/update-characters
-          branch-suffix: $(date +'%Y-%m-%d-%H-%M-%S')
+          branch-suffix: timestamp
           base: main
           add-paths: data/characters.csv
           delete-branch: true
