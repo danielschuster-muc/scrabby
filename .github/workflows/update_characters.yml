@@ -24,12 +24,12 @@ jobs:
       - name: Run scraper task
         run: bundle exec rake scrabby:characters
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SCRAPPY_TOKEN }}
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.SCRAPPY_TOKEN }}
           commit-message: Update characters
           title: Update characters
           body: |
@@ -42,4 +42,4 @@ jobs:
           path: data/characters.csv
           delete-branch: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SCRAPPY_TOKEN }}
