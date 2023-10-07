@@ -1,7 +1,10 @@
-name: Update characters data by scraping from the Harry Potter Wiki
+name: Update characters
 on:
   schedule:
     - cron: "*/5 * * * *"
+  push:
+    branches:
+      - main
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -36,6 +39,7 @@ jobs:
           branch: scrabby/update-characters
           branch-suffix: timestamp
           base: main
-          labels: characters, scrabby
+          path: data/characters.csv
+          delete-branch: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
