@@ -39,7 +39,7 @@ jobs:
           branch: scrabby/update-characters
           branch-suffix: timestamp
           base: main
-          path: data/characters.csv
+          add-paths: data/characters.csv
           delete-branch: true
           labels: characters
         env:
