@@ -22,7 +22,7 @@ namespace :scrabby do
     end
 
     characters = []
-    character_links.take(10).sort!.each do |url|
+    character_links.take(100).sort!.each do |url|
       characters << CharacterScraper.scrape_page(url, characters)
     end
 
