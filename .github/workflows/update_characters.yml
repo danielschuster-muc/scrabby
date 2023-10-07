@@ -41,5 +41,6 @@ jobs:
           base: main
           path: data/characters.csv
           delete-branch: true
+          labels: characters
         env:
           GITHUB_TOKEN: ${{ secrets.SCRAPPY_TOKEN }}
