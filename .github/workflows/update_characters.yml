@@ -1,7 +1,7 @@
 name: Update characters
 on:
   schedule:
-    - cron: "*/5 * * * *" # every 5 minutes
+    - cron: '0 6 * * 1' # run every monday at 6am UTC
   push:
     branches:
       - main
@@ -33,10 +33,9 @@ jobs:
           commit-message: Update characters
           title: Update characters
           body: |
-            Updates the `characters` data by scraping from the Harry Potter Wiki.
-            This is an automatic generated pull request.
+            This is an automated pull request to update the `characters` data.
           branch: scrabby/update-characters
-          branch-suffix: timestamp
+          branch-suffix: $(date +'%Y-%m-%d-%H-%M-%S')
           base: main
           add-paths: data/characters.csv
           delete-branch: true
