@@ -2,9 +2,6 @@ name: update-spells
 on:
   schedule:
     - cron: '0 6 * * 5' # run every friday at 6am UTC
-  push:
-    branches:
-      - main
   workflow_dispatch:
 jobs:
   scrape:

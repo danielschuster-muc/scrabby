@@ -2,9 +2,6 @@ name: update-potions
 on:
   schedule:
     - cron: '0 6 * * 3' # run every wednesday at 6am UTC
-  push:
-    branches:
-      - main
   workflow_dispatch:
 jobs:
   scrape:
