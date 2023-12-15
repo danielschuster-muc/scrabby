@@ -13,7 +13,7 @@ Scrabby performs the following spellbinding tasks:
 Normally you don't need to setup anything. The data will be automatically scraped and updated once a week, by using [GitHub Actions](.github/workflows).
 However, if you'd like to take the reins and run the scrapers manually, follow these simple steps:
 
-### 1. Clone the repository
+### 1. Clone / Fork the repository
 ```bash
 git clone git@github.com:danielschuster-muc/scrabby.git && cd scrabby
 ```
@@ -38,3 +38,5 @@ The fresh scraped data will be saved to `data/*.csv`, conveniently available for
 
 ## License
 This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file.
+
+Data is scraped from the [Harry Potter Wiki](https://harrypotter.fandom.com/wiki/Main_Page) and therefore licensed under [CC-BY-SA](https://www.fandom.com/licensing) unless otherwise stated. For specific details, please refer to the URLs linking to the corresponding wiki pages in the [data](/data) files. 
