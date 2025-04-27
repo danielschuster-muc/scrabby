@@ -7,6 +7,8 @@ class SpellScraper < BasicScraper
   def self.scrape_page(url, spells)
     doc = doc(url)
 
+    return puts "Failed to fetch or parse URL: #{url}" unless doc
+
     url = CGI.unescape(url)
     name = doc.css('h2.pi-item.pi-item-spacing.pi-title')&.first&.text || doc.css('#firstHeading')&.first&.text
     return puts "no name for #{url}" unless name

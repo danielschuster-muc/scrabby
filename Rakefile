@@ -66,7 +66,7 @@ namespace :scrabby do
 
     CSV.open('data/spells.csv', 'w') do |csv|
       csv << spells.first.keys
-      spells.each { |spell| csv << spell.values }
+      spells.compact.each { |spell| csv << spell.values }
     end
   end
 end

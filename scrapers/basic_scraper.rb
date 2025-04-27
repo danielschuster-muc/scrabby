@@ -9,8 +9,13 @@ require 'active_support/core_ext/string/inflections'
 # scrapers/basic_scraper.rb
 class BasicScraper
   def self.doc(url)
-    file = URI.parse(url).open.read
-    Nokogiri::HTML(file)
+    begin
+      file = URI.parse(url).open.read
+      Nokogiri::HTML(file)
+    rescue SocketError => e
+      puts "Failed to fetch URL: #{url} - #{e.message}"
+      nil
+    end
   end
 
   def self.data_by_data_tag(element)
