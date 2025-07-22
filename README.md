@@ -16,10 +16,10 @@ Scrabby performs the following spellbinding tasks:
 You usually don’t need to do anything. Scrabby automatically scrapes and updates the data once a month using [GitHub Actions](.github/workflows).
 But if you want to run the scrapers yourself, just follow these simple steps:
 
-### 1. Clone / Fork the repository
+### 1. Clone the repository
 
 ```bash
-git clone git@github.com:danielschuster-muc/scrabby.git && cd scrabby
+git clone https://github.com/danielschuster-muc/scrabby.git && cd scrabby
 ```
 
 ### 2. Install ruby
