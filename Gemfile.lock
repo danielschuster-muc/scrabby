@@ -24,13 +24,13 @@ GEM
       concurrent-ruby (~> 1.0)
     minitest (5.20.0)
     mutex_m (0.1.2)
-    nokogiri (1.16.5-x86_64-linux)
+    nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
     open-uri (0.3.0)
       stringio
       time
       uri
-    racc (1.8.0)
+    racc (1.8.1)
     rake (13.0.6)
     ruby2_keywords (0.0.5)
     stringio (3.0.8)
